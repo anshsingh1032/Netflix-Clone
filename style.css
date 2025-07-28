@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'MYFONT1';
+    src: url(FONTS/MYFONT1.otf) format('truetype');
+}
+@font-face {
+    font-family: 'MYFONT';
+    src: url(FONTS/MYFONT.otf) format('truetype');
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/a927b1ee-784d-494a-aa80-cf7a062d2523/web/IN-en-20250714-TRIFECTA-perspective_5acb7337-c372-45ec-ae12-ddb110e6ad78_large.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    position: relative;
+}
+
+.main .box {
+    height: 95vh;
+    width: 100%;
+    opacity: 0.72;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav img {
+    width: 148px;
+    padding-top: 27px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    width: 5rem;
+    position: relative;
+    z-index: 10;
+}
+
+nav {
+    max-width: 78vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.hero {
+    height: calc(100% - 64px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    font-family: 'MYFONT1';
+    gap: 23px;
+    padding: 0 30px;
+
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: 56px;
+    text-align: center;
+    max-width: 565px;
+
+}
+
+.hero> :nth-child(2) {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero :nth-child(3) {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.separation {
+    height: 5px;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn {
+    padding: 5px 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 8px 24px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.main input {
+    padding: 16px 24px;
+    padding-right: 225px;
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 5px;
+    background-color: rgba(23, 23, 23, 0.2);
+    font-size: 15px;
+    font-weight: 550;
+    color: white;
+}
+.lang{
+    border: 1px solid rgb(119, 119, 119);
+}
+.btn-red-sn {
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+}
+
+.trending {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 700;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.trending .cards {
+    display: flex;
+    overflow-x: auto;
+    margin-left: 110px;
+    scroll-snap-type: x mandatory;
+    gap: 50px;
+    padding: 0 20px 20px;
+    /* -webkit-overflow-scrolling: touch; */
+}
+
+.trending img {
+    border-radius: 10px;
+}
+
+.card {
+    position: relative;
+}
+
+.card .number {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav img {
+        width: 5rem;
+    }
+
+    nav button {
+        width: auto;
+    }
+
+    .hero-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+.faq{
+    font-family: 'MYFONT1';
+    background-color: #000;
+    color: white;
+    font-size: 26px;
+}
+.faqbox{
+    font-family: 'MYFONT';
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: rgb(45, 44, 44);
+    padding: 1.5rem;
+    max-width: 78vw;
+    margin:auto;
+    margin-bottom: 10px;
+}
+.faqbox:hover{
+    background-color: rgb(61, 61, 61);
+}
+.faqbox svg {
+    height: 2rem;
+    /* width:1rem; */
+}
